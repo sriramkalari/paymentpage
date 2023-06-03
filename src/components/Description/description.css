@@ -1,0 +1,33 @@
+.icon-paragraph {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-left: 8rem;
+    
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  
+  .icon {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+  }
+  
+  .icon-container p {
+    margin: 0;
+    color:rgba(255, 255, 255, 1);
+    width: 401px;
+    height: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    margin-left: 3rem;
+  }
+  

@@ -1,0 +1,60 @@
+.card {
+    width: 450px;
+    height: fit-content;
+    max-height: 800px; /* Adjust the maximum height as per your requirements */
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+  .card-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-payment-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card-subscription-details {
+    margin-top: 20px;
+  }
+  
+  /* Styles for PaymentSection component */
+  .payment-section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+  }
+  
+  .payment-content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin-left: -15px;
+  }
+  
+  .payment-image {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .subscription-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .subscription-text {
+    font-weight: bold;
+  }
+  
+  

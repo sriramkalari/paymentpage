@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #FFFFFF;
+  background-size: cover; /* Updated property value */
+  background-repeat: no-repeat;
+}
+
+/* Remove background for screens smaller than 768px */
+@media (max-width: 768px) {
+  .header {
+    background: none;
+  }
+}  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 5rem;
+  }
+  
+  
+  .dropdown-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .dropdown {
+    padding: 5px 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+  }
+  
+  .actions-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 4rem;
+  }
+  
+  @media (max-width: 768px) {
+    .actions-container {
+      margin-left:20rem
+    }
+
+  }
+  .search-icon {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Change color for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .search-icon {
+      display: none;
+    }
+  }
+  
+  .join-now-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 52px;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: linear-gradient(266.79deg, #0048FF 4.63%, #0096FF 100%);
+   color: rgba(255, 255, 255, 1);
+  }
+  @media (max-width: 768px) {
+    .join-now-button {
+      border-radius: 10px;
+     white-space: nowrap;
+    }
+  }
+
+  .login-button{
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+  
+  .login-button:hover,
+  .join-now-button:hover {
+    background-color: #0096FF;
+    border-radius: 5px;
+  }
+  

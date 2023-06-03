@@ -1,0 +1,167 @@
+.payment-section {
+    height: 700px;
+    width: 700px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .image-text {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .subscription-heading {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 0.3%;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .subscription-card {
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    background: #E7E7E7;
+    border: 2px solid #BEBEBE;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 7px;
+    width: 400px;
+    margin-left: 20px;
+  }
+  .subscription-custom{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .subscription-info{
+    display: grid;
+    align-items: center;
+  }
+  .subscription-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .subscription-card p {
+    margin: 0;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .price-per-month {
+    font-size: 16px;
+    color: gray;
+    margin-left: 1em;
+  }
+  
+  .subscription-card {
+    position: relative;
+  }
+  
+  .subscription-custom {
+    position: relative;
+  }
+  
+  .subscription-tag {
+    position: absolute;
+    top: -7px;
+    left: 58%;
+    transform: translateX(-50%);
+  }
+  
+  /* hover effects for card*/
+
+  .subscription-card {
+  
+
+  /* Add transition property for smooth animation */
+  transition: transform 0.3s ease;
+  background:  #FF0000;
+}
+
+.subscription-card:hover {
+ 
+  transform: scale(1.05);
+  
+}
+
+.subscription-card:active {
+  /* Applying the active effect */
+  transform: scale(0.95);
+  background:  #FF0000;
+  
+}
+
+
+.subscription-custom:hover {
+  
+  border: 2px solid #DE4313;
+  
+}
+
+/* hover styles for the subscription-info section */
+.subscription-info:hover {
+ 
+  background-color: #DE4313;
+  
+}
+
+
+.price-per-month:hover {
+  
+  color: #DE4313;
+  
+}
+.subscription-card.selected {
+  animation: celebrate 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+@keyframes celebrate {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1.3);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import Heading from './components/HeadingSection/Heading';
+import Description from './components/Description/Description';
+import book from './components/images/book.png';
+import time from './components/images/time.png';
+import live from './components/images/live.png';
+import education from './components/images/education.png';
+import Ads from './components/images/Icon.png';
+import Card from './components/Card/Card';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="heading-section">
+        <Heading/>
+      </div>
+      <div className="content">
+        <div className="description-section">
+          <Description imageSrc={book} text="100+ Job relevant courses" />
+          <Description imageSrc={time} text="20,000+ Hours of content" />
+          <Description imageSrc={live} text="Exclusive webinar access" />
+          <Description imageSrc={education} text="Scholarship worth ₹94,500" />
+          <Description imageSrc={Ads} text="Ad Free learning experience" />
+        </div>
+        <div className="card-section">
+          <Card />
+        </div>
+      </div>
     </div>
   );
 }
